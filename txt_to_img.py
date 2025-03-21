@@ -57,7 +57,7 @@ def main():
         return
     with open(TXT_FILE, "r", encoding="utf-8") as f:
         content = f.read()
-    image = txt_to_img(content, font_size=16, padding=10, bg_color="white", fg_color="black")
+    image = txt_to_img(content, font_size=16, padding=10, bg_color="#0d1117", fg_color="#c9d1d9")
     image.save(IMG_FILE)
     print(f"Image saved as {IMG_FILE}")
 
